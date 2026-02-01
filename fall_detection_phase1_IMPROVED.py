@@ -27,12 +27,15 @@ MIN_CONSECUTIVE_FRAMES = 3
 # IMPROVED: Lower confidence for better detection
 DETECTION_CONFIDENCE = 0.25  # Changed from 0.5 to 0.25
 
-# IMPROVED: More target objects
+# IMPROVED: More target objects (EXCLUDING 'person' to avoid false positives)
 TARGET_CLASSES = [
     'cup', 'bottle', 'cell phone', 'book', 'scissors',
     'laptop', 'mouse', 'keyboard', 'remote', 'clock',
     'vase', 'bowl', 'banana', 'apple', 'orange',
-    'spoon', 'fork', 'knife', 'pen', 'pencil'
+    'spoon', 'fork', 'knife', 'backpack', 'umbrella',
+    'handbag', 'tie', 'suitcase', 'frisbee', 'sports ball'
+    # NOTE: 'person' is intentionally excluded to prevent 
+    # false alerts when workers move or lean down
 ]
 
 # Alert Configuration

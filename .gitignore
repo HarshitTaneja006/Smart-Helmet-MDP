@@ -12,9 +12,15 @@ env/
 Thumbs.db
 *.log
 
+# Test outputs
+test_frame_camera_*.jpg
+test_detection_frame.jpg
+detections_conf_*.jpg
+fall_frame_*.jpg
+
 # Project-specific: Old/diagnostic files
-fall_detection_phase1.py
-diagnose_detection.py
+Archive/
+Tests/
 
 # YOLOv5 cache
 runs/
