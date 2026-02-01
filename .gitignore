@@ -1,0 +1,23 @@
+# Virtual environments
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Project-specific: Old/diagnostic files
+fall_detection_phase1.py
+diagnose_detection.py
+
+# YOLOv5 cache
+runs/
+weights/
+*.pt
+*.pth
